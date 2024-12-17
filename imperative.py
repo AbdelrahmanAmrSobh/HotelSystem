@@ -102,6 +102,8 @@ class HotelManagementSystem:
 
             self.reservations.append(newReservation)
 
+        print(*self.reservations, *self.rooms, *self.customers)
+
     def add_room(self, room_number, room_type, price):
         add_record("rooms", (room_number, room_type, price, True))
         room = Room(room_number, room_type, price)
