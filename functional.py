@@ -73,6 +73,7 @@ def check_out_reservation(reservations, rooms, customer_name, room_number):
         ]
         updated_rooms = update_room_availability(rooms, room_number, True)
         bill = calculate_bill(reservation_to_checkout)
+        update_record("reservations", "checked_out = 1", room_number)
         return updated_reservations, updated_rooms, bill
     else:
         print("Customer has not checked in or invalid reservation.")
