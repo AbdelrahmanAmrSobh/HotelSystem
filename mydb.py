@@ -5,10 +5,11 @@ import mysql.connector
 def connect_to_mysql():
     try:
         conn = mysql.connector.connect(
-            user='root',
-            password='admin',
-            host='localhost'
-        )
+    user='root',
+    password='admin',  # Replace with your actual password
+    host='localhost',
+    port=3306  # Default MySQL port
+)
         return conn
     except mysql.connector.Error as err:
         print(f"Error: {err}")
