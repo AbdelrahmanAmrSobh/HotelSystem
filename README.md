@@ -54,8 +54,3 @@ A simple Hotel Management System built using Python and MySQL to manage rooms, c
 2. Generate reports for a summary of room status and revenue.
 
 ---
-
-## License
-
-This project is licensed under the MIT License.
-
